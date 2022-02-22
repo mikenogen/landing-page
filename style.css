@@ -2,6 +2,7 @@
     height: 100%;
 }
 
+/*Header Area*/
 header {
     box-sizing: border-box;
     margin: 0;
@@ -9,34 +10,30 @@ header {
     background-color: darkblue;
     color: white;
 }
-
 ul {
     list-style-type: none;
 }
-
 li {
     display: inline-block;
     padding: 0px 20px;
 }
-
 a {
     text-decoration: none;
     color: white;
 }
-
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
 }
-
 .header-logo {
     height: 100px;
     width: 100px;
     position: relative;
 }
 
+/*Intro Area*/
 .intro {
     position: relative;
     background: darkblue;
@@ -45,28 +42,45 @@ a {
     justify-content: space-evenly;
     align-items: center;
 }
-
 .intro .text-box {
     position: relative;
     max-width: 500px;
     gap: 0;
 }
-
 .intro img {
     height: 300px;
     width: 300px;
 }
-
 .intro .text-box, 
 .intro .intro-img {
     margin-bottom: 5%;
 }
 
-.various-info {
-    text-align: center;
+/*Random Information Area*/
+.various{
+    position: relative;
+    width: 100%;
+    margin-bottom: 5%;
 }
-
-.various-info .various-image {
+.various h2 {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+}
+.various-info {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+}
+[class ^="info-"] {
+    display: flex;
+    flex-direction: column;
+}
+.various-info img {
+    width: 200px;
+    height: 200px;
+}
+.various-info p {
+    max-width: 200px;
+    text-align: center;
 }
