@@ -31,12 +31,14 @@ a {
     height: 100px;
     width: 100px;
     position: relative;
+    cursor: pointer;
 }
 
 /*Intro Area*/
 .intro {
     position: relative;
     background: darkblue;
+    color: white;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -83,4 +85,30 @@ a {
 .various-info p {
     max-width: 200px;
     text-align: center;
+}
+
+/*Quote Area*/
+.quote {
+    position: relative;
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    margin-bottom: 5%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+}
+.quote .quote-text {
+    margin: 0;
+    padding: 0;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+.quote-text h3 {
+    display: flex;
+    align-self: end;
 }
