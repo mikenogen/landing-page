@@ -112,3 +112,45 @@ a {
     display: flex;
     align-self: end;
 }
+
+/*Sign-up Area*/
+.sign-up {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+}
+.sign-up .sign-up-box {
+    margin: 0;
+    background-color: darkblue;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.sign-up-box .text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+.sign-up-box .button {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-self: center;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    padding: 1%;
+    box-sizing: border-box;
+    background-color: darkblue;
+    color: white;
+
+    text-align: center;
+}
