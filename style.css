@@ -1,13 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', arial;
+}
+
 .container {
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Header Area*/
 header {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: darkblue;
+    background-color: #1F2937;
     color: white;
 }
 ul {
@@ -28,26 +40,29 @@ a {
     padding: 30px 10%;
 }
 .header-logo {
-    height: 100px;
-    width: 100px;
-    position: relative;
+    height: 84px;
+    width: 84px;
+    margin-right: auto;
     cursor: pointer;
 }
 
 /*Intro Area*/
 .intro {
-    position: relative;
-    background: darkblue;
+    background: #1F2937;;
     color: white;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 90px;
 }
 .intro .text-box {
-    position: relative;
     max-width: 500px;
     gap: 0;
+}
+.text-box h1{
+    font-size: 48px;
+    margin-bottom: 0px;
 }
 .intro img {
     height: 300px;
@@ -57,12 +72,24 @@ a {
 .intro .intro-img {
     margin-bottom: 5%;
 }
+.text-box button {
+    display: block;
+    text-align: center;
+    width: 110px;
+    border: none;
+    background-color: darkcyan;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Roboto', arial;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 /*Random Information Area*/
 .various{
-    position: relative;
-    width: 100%;
     margin-bottom: 5%;
+    align-items: center;
 }
 .various h2 {
     margin: 5%;
@@ -72,27 +99,29 @@ a {
 .various-info {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
 }
 [class ^="info-"] {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .various-info img {
     width: 200px;
     height: 200px;
+    border: 4px solid darkblue;
+    border-radius: 15px;
 }
 .various-info p {
-    max-width: 200px;
+    max-width: 190px;
     text-align: center;
 }
 
 /*Quote Area*/
 .quote {
-    position: relative;
     width: 100%;
-    background-color: darkblue;
-    color: white;
+    background-color: #E5E7EB;
     margin-bottom: 5%;
     padding: 5% 0;
     display: flex;
@@ -108,14 +137,18 @@ a {
     align-items: center;
     gap: 0;
 }
+.quote-text h2 {
+    font-style: italic;
+    font-weight: lighter;
+}
 .quote-text h3 {
+    font-size: 25px;
     display: flex;
     align-self: end;
 }
 
 /*Sign-up Area*/
 .sign-up {
-    position: relative;
     width: 100%;
     margin-bottom: 5%;
     padding: 5% 0;
@@ -124,8 +157,9 @@ a {
 }
 .sign-up .sign-up-box {
     margin: 0;
-    background-color: darkblue;
+    background-color: #1F2937;
     width: 1000px;
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -138,19 +172,30 @@ a {
     gap: 0;
 }
 .sign-up-box .button {
-    width: 100px;
+    width: 110px;
     height: 50px;
     display: flex;
     align-self: center;
 }
+/* .text-box button { 
+    display: block;
+    text-align: center;
+    width: 110px;
+    border: none;
+    background-color: darkcyan;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Roboto', arial;
+    font-weight: bold;
+    cursor: pointer;
+} */
 
 footer {
     margin: 0;
     padding: 0;
     padding: 1%;
-    box-sizing: border-box;
-    background-color: darkblue;
+    background-color: #1F2937;
     color: white;
-
     text-align: center;
 }
